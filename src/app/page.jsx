@@ -8,7 +8,7 @@ export default function Home() {
     {/* <UseRouter /> */}
     <h1>Welcome to Next JS</h1>
     <p>
-    <Link href="/fetch/SSG" style={{color: 'white'}}>See SSG Data Fetching</Link>
+    <Link href="/fetch/CSR" style={{color: 'white'}}>See Client Side Data Fetching</Link>
     </p>
     </main>
   );
