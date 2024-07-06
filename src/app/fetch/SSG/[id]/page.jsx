@@ -1,9 +1,12 @@
 // src/app/fetch/SSG/[id]/page.js
-import fetchData from "../../../../../services/fetchData/page";
+
+const fetchData = async () => {
+  let data = await fetch("https://jsonplaceholder.typicode.com/users")
+  return data.json();
+};
 
 export default async function UserInfoPage({ params }) {
-  let data = fetchData();
-  let users = await data;
+  let users = await fetchData();
   const userId = params.id;
   let userInfo = users[userId - 1]; // because index starts from 0
 

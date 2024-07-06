@@ -33,7 +33,7 @@ Limitation: What if 1M pages?
 2. Static Site Generation (static/default): on build app pages cached by CDN, indexed by search engine & serve instantly.
 Limitation: What if data changes after build?
 3. Incremental Static Regeneration (static+dynamic): Data will be cached but after sometimes it will be refreshed: { next: { revalidate: 10 }}
-
+Note: Diff. between SSR & SSG can only be understood when we are in production (build) mode, otherwise in development mode we see no difference.
 
 NESTED Routes:
 GROUP ROUTE:
